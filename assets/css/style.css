@@ -1,0 +1,1428 @@
+@font-face {
+  font-family: "IowanOldStyle";
+  src: url("../fonts/iowanoldst_bt_roman.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "IowanOldStyleBold";
+  src: url("../fonts/iowanoldst_osf_bt_roman.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Kinfolk";
+  src: url("../fonts/FontsFree-Net-Kinfolk_Reg.ttf") format("truetype");
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #ebe0e0;
+  font-family: "IowanOldStyle";
+  color: #000;
+}
+
+/* ---- common css start ---- */
+.line {
+  width: 100%;
+  padding: 20px 0;
+  object-fit: cover;
+  object-position: center;
+  height: 50px;
+  /* min-width: 100%; */
+}
+
+.title {
+  font-family: "Kinfolk";
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 600;
+}
+
+.main-content section .section-bg-img {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.3;
+}
+
+.main-content section .banner-frame {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  z-index: 2;
+}
+
+.main-content section .banner-bottom-bg-img {
+  position: absolute;
+  bottom: -30%;
+  z-index: 1;
+}
+
+.custom-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ---- header section css start ---- */
+.header .content {
+  background-color: #d29999;
+  padding: 20px 0;
+}
+
+.header .content .navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 500;
+  font-family: "IowanOldStyle";
+}
+
+.header .content .navbar .navbar-brand img {
+  width: 20%;
+}
+
+.header .content .navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.header .content .navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  font-family: "IowanOldStyle" !important;
+}
+
+.header .content .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-toggle:hover {
+  color: #fff;
+}
+
+.header .content .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
+  border: none;
+}
+
+.header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background: #e5dad9;
+  border: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #d49e9a;
+}
+
+.header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  line-height: 125%;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+/* ---- footer section css start ---- */
+.footer {
+  background-color: #d29999;
+  padding: 50px 0 20px;
+}
+
+.footer .content .top-part .title {
+  text-align: center;
+}
+
+.footer .content .top-part .text {
+  width: 35%;
+  margin: 45px auto 0;
+  text-align: center;
+}
+
+.footer .content .top-part .form .field {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer .content .top-part .form .field input {
+  width: 35%;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #d29999;
+  background-color: #ebe0e0;
+}
+
+.footer .content .top-part .form .field input:focus-visible {
+  outline: none;
+}
+
+.footer .content .top-part .form .field .btn {
+  background-color: #000;
+  padding: 10px 35px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 25px;
+  margin-left: -50px;
+}
+
+.footer .content .bottom-part {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.footer .content .bottom-part .text-part {
+  width: 29%;
+}
+
+.footer .content .bottom-part .text-part .head {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.footer .content .bottom-part .text-part .text {
+  font-size: 28px;
+  line-height: 125%;
+  font-weight: 400;
+}
+
+.footer .content .bottom-part .link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .content .bottom-part .link-list .list-item .list-head {
+  margin-bottom: 15px;
+}
+
+.footer .content .bottom-part .link-list .list-item .list-head,
+.footer .content .bottom-part .link-list .list-item .link {
+  font-size: 28px;
+  line-height: 125%;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer .content .bottom-part .link-list .list-item .link:hover {
+  color: #fff;
+}
+
+.footer .bottom-part .text-part .social-media-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .bottom-part .text-part .social-media-links a:hover {
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+
+/* ---- banner section css start ---- */
+.main-content .banner-section {
+  background-color: #d29999;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content .banner-section .content {
+  position: relative;
+  z-index: 3;
+}
+
+.main-content .banner-section .content .owl-carousel .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #69524f;
+  border-radius: 50%;
+}
+
+.main-content .banner-section .content .owl-carousel .owl-dots {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 175px;
+  left: 20px;
+}
+
+.main-content .banner-section .content .owl-carousel .owl-dots .owl-dot.active {
+  background-color: #e6d0ce;
+}
+
+.main-content .banner-section .content .owl-carousel .item .text-part .head-text {
+  font-size: 35px;
+  line-height: 125%;
+  letter-spacing: 3px;
+  font-family: "IowanOldStyle";
+  font-weight: 500;
+}
+
+.main-content .banner-section .content .owl-carousel .item .text-part .btn {
+  background-color: #e5dad9;
+  padding: 10px 35px;
+  margin-top: 40px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: "IowanOldStyle";
+  font-weight: 400;
+}
+
+.main-content .banner-section .content .owl-carousel .item .text-part .text {
+  font-size: 28px;
+  line-height: 125%;
+  font-weight: 500;
+  font-family: "IowanOldStyle";
+  margin-top: 40px;
+}
+
+.banner-section .content .item .item-content-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 100%;
+}
+
+.banner-section .content .item .item-content-block .text-part {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.main-content .banner-section .content .owl-carousel .item .image-part {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+}
+
+.main-content .banner-section .content .owl-carousel .item .image-part img {
+  margin-bottom: -15px;
+}
+
+.main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  position: absolute;
+  bottom: -59%;
+  right: 0;
+}
+
+/* ---- production section css start ---- */
+.main-content .product-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content .product-section .section-bottom-img {
+  position: absolute;
+  bottom: 20px;
+  z-index: 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+}
+
+.main-content .product-section .custom-container {
+  position: relative;
+  z-index: 3;
+}
+
+.main-content .product-section .content .title {
+  text-align: center;
+}
+
+.main-content .product-section .content .head-text {
+  font-size: 22px;
+  line-height: 125%;
+  font-weight: 400;
+  font-family: "IowanOldStyle";
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content .product-section .content .box-part .box .image-part {
+  width: 100%;
+}
+
+.main-content .product-section .content .box-part .box {
+  background-color: #d29999;
+  height: 100%;
+}
+
+.main-content .product-section .content .box-part .box .image-part img {
+  width: 100%;
+}
+
+.main-content .product-section .content .box-part .box .text-part {
+  padding: 50px 25px;
+}
+
+.main-content .product-section .content .box-part .box .text-part .box-text {
+  font-size: 38px;
+  line-height: 125%;
+  font-weight: 500;
+}
+
+.main-content .product-section .content .box-part .box .text-part .text {
+  font-size: 27px;
+  line-height: 125%;
+  font-weight: 400;
+}
+
+.main-content .product-section .content .box-part .btn {
+  padding: 10px 50px;
+  background-color: #d49e9a;
+  border-radius: 25px;
+  font-size: 25px;
+  line-height: 38px;
+  font-family: "IowanOldStyle";
+}
+
+.main-content .product-section .content .box-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 90px;
+  margin-top: 35px;
+}
+
+.product-section .content .box-part .box-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.main-content .product-section .content {
+  padding: 50px 0 100px;
+}
+
+/* ---- hair product section css start ---- */
+.main-content .hair-product-section {
+  width: 100%;
+  position: relative;
+  background: #d29999;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.hair-product-section .hair-product-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  min-height: 1035px;
+}
+
+.hair-product-content .content-part {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  padding: 0 30px;
+}
+
+.hair-product-content .image-part {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hair-product-content .image-part .hair-section-banner {
+  position: absolute;
+  width: 130%;
+  height: auto;
+  bottom: 0%;
+  left: -14%;
+  z-index: 4;
+}
+
+.hair-product-content .content-part .head-text {
+  font-family: "IowanOldStyle";
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+.hair-product-content .content-part .text {
+  font-family: "IowanOldStyle";
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.hair-product-content .content-part .btn {
+  background-color: #e5dad9;
+  padding: 10px 35px;
+  margin-top: 40px;
+  border-radius: 25px;
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "IowanOldStyle";
+  font-weight: 400;
+}
+
+/* ---- gupta foundation section css start ---- */
+.main-content .gupta-foundation {
+  width: 100%;
+  background: #d29999;
+  overflow: hidden;
+  position: relative;
+}
+
+.gupta-foundation .content-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.gupta-foundation .content-part .left-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-right: 80px;
+  padding-left: 200px;
+  position: relative;
+  z-index: 5;
+}
+
+.gupta-foundation .content-part .right-part {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.gupta-foundation .content-part .btn {
+  background-color: #e5dad9;
+  padding: 10px 35px;
+  margin-top: 40px;
+  border-radius: 25px;
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "IowanOldStyle";
+  font-weight: 400;
+  width: 50%;
+}
+
+.gupta-foundation .content-part .desc-text {
+  font-family: "IowanOldStyle";
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.main-content section.gupta-foundation .banner-bottom-bg-img {
+  bottom: 0;
+  opacity: 0.7;
+}
+
+/* ---- foundation info section css start ---- */
+.main-content .foundation-info {
+  width: 100%;
+  background-color: #d29999;
+  overflow: hidden;
+  position: relative;
+}
+
+.foundation-info .content-block {
+  display: flex;
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 60px 0;
+  gap: 20px;
+}
+
+.foundation-info .content-block .info-text {
+  font-family: "IowanOldStyle";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+}
+
+.main-content section.foundation-info .banner-bottom-bg-img {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: 1;
+  width: 110%;
+}
+
+/* ---- award section css start ---- */
+.main-content .award-section {
+  width: 100%;
+  background: #ebe0e0;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.award-section .content-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.award-section .content-block .top-title-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+}
+
+.award-section .content-block .middle-content-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 80px;
+}
+
+.award-section .content-block .bottom-action-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-section .content-block .bottom-action-part .btn {
+  padding: 10px 50px;
+  background-color: #d49e9a;
+  border-radius: 25px;
+  font-size: 25px;
+  line-height: 38px;
+  font-family: "IowanOldStyle";
+  cursor: pointer;
+}
+
+.award-section .content-block .middle-content-part .award-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.award-section .content-block .middle-content-part .award-card h5 {
+  font-family: "IowanOldStyle";
+  font-size: 40px;
+  line-height: 44px;
+  margin: 0;
+  font-weight: 500;
+  height: 100%;
+}
+
+.award-section .content-block .middle-content-part .award-card div {
+  font-family: "IowanOldStyle";
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.main-content section.award-section .banner-bottom-bg-img {
+  position: absolute;
+  bottom: 0;
+  left: -33%;
+  z-index: 1;
+  height: 100%;
+  width: 170%;
+  object-position: center;
+}
+
+@media (max-width: 1750px) {
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -28%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 1660px) {
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -20%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 60px;
+  }
+
+  .banner-section .content .item .item-content-block .text-part {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -10%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 50px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .btn,
+  .main-content .banner-section .content .owl-carousel .item .text-part .text {
+    margin-top: 30px;
+  }
+
+  .header .content .navbar .navbar-collapse .navbar-nav {
+    gap: 30px;
+  }
+
+  .header .content .navbar .navbar-brand {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1519px) {
+  .banner-section .content .item .item-content-block .text-part {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1460px) {
+
+  .header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
+  .main-content .banner-section .content .owl-carousel .item .text-part .text {
+    font-size: 24px;
+  }
+
+  .gupta-foundation .content-part .btn{
+    width: 60%;
+  }
+
+  .award-section .content-block .top-title-part{
+    max-width: 76%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .banner-section .content .item .item-content-block .text-part {
+    padding-top: 85px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .btn {
+    margin-top: 10px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .text {
+    margin-top: 25px;
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .head-text {
+    font-size: 30px;
+  }
+
+  .main-content .product-section .content .box-part {
+    gap: 70px;
+  }
+
+  .main-content .product-section .content .box-part .btn,
+  .main-content .product-section .content .box-part .box .text-part .text {
+    font-size: 22px;
+  }
+
+  .main-content .product-section .content .box-part .box .text-part .box-text {
+    font-size: 32px;
+  }
+
+  .main-content .product-section .content .box-part .box .text-part {
+    padding: 35px 20px;
+  }
+
+  .main-content .product-section .content .box-part .btn {
+    padding: 5px 35px;
+  }
+
+  .hair-product-content .content-part .head-text {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .hair-product-content .content-part .text {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .hair-product-content .content-part .btn {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .hair-product-section .hair-product-content {
+    min-height: 800px;
+  }
+
+  .gupta-foundation .content-part .left-part {
+    padding-left: 90px;
+  }
+
+  .gupta-foundation .content-part .desc-text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .gupta-foundation .content-part .btn {
+    font-size: 24px;
+    line-height: 28px;
+    width: 60%;
+  }
+
+  .foundation-info .content-block .info-text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .award-section .content-block .middle-content-part .award-card h5 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .award-section .content-block .middle-content-part .award-card div {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .award-section .content-block .bottom-action-part .btn {
+    padding: 5px 35px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .footer .content .top-part .text {
+    width: 50%;
+    margin: 35px auto 0;
+  }
+
+  .footer .content .top-part .form .field input {
+    width: 42%;
+  }
+
+  .footer .content .bottom-part .text-part .text {
+    font-size: 22px;
+  }
+
+  .footer .bottom-part .text-part .social-media-links {
+    gap: 10px;
+  }
+
+  .footer .content .bottom-part .text-part .social-media-links a img {
+    width: 85%;
+  }
+
+  .footer .content .bottom-part .link-list .list-item .list-head,
+  .footer .content .bottom-part .link-list .list-item .link {
+    font-size: 24px;
+  }
+
+  .header .content .navbar .navbar-collapse .navbar-nav {
+    gap: 25px;
+  }
+
+  .header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header .content .navbar .navbar-brand {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .award-section .content-block .top-title-part{
+    max-width: 64%;
+  }
+
+}
+
+@media (max-width: 1360px) {
+  .banner-section .content .item .item-content-block .text-part {
+    padding-top: 50px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 62px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -30%;
+  }
+
+  .award-section .content-block .middle-content-part .award-card div {
+    font-size: 20px;
+  }
+
+  .hair-product-content .content-part .head-text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hair-product-content .content-part .text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 30px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -15%;
+  }
+
+  .hair-product-content .content-part .head-text {
+    letter-spacing: 8px;
+  }
+
+  .title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .award-section .content-block .middle-content-part .award-card div {
+    font-size: 18px;
+  }
+
+  .footer .content .bottom-part .text-part {
+    width: 38%;
+  }
+
+  .gupta-foundation .content-part .desc-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .gupta-foundation .content-part .btn {
+    font-size: 22px;
+    line-height: 26px;
+    width: 70%;
+    padding: 10px 25px;
+  }
+
+  .footer .content .top-part .text {
+    width: 60%;
+    margin: 35px auto 0;
+  }
+
+  .footer .content .top-part .form .field input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1220px) {
+  .banner-section .content .item .item-content-block .text-part {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -4%;
+  }
+
+  .header .content .navbar .navbar-brand {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .main-content .product-section .content .head-text {
+    width: 75%;
+  }
+
+  .main-content .product-section .content .box-part {
+    gap: 50px;
+  }
+
+  .award-section .content-block .middle-content-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .footer .content .top-part .form .field input {
+    width: 55%;
+  }
+
+  .header .content .navbar .navbar-brand {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .hair-product-content .content-part .head-text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-content .product-section .content .box-part {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hair-product-section .hair-product-content {
+    min-height: 650px;
+  }
+
+  .hair-product-content .content-part .head-text {
+    letter-spacing: 5px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .hair-product-content .content-part .text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .gupta-foundation .content-part .desc-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .foundation-info .content-block .info-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .btn,
+  .main-content .product-section .content .box-part .btn,
+  .hair-product-content .content-part .btn,
+  .gupta-foundation .content-part .btn {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 991px) {
+  .line {
+    padding: 16px 0;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 70%;
+  }
+
+  .banner-section .content .item .item-content-block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 52%;
+    left: 50%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -400px;
+    left: 60px;
+    width: 90%;
+  }
+
+  .main-content .product-section .content .box-part .btn,
+  .main-content .product-section .content .box-part .box .text-part .text {
+    font-size: 18px;
+  }
+
+  .main-content .product-section .content .box-part .box .text-part .box-text {
+    font-size: 30px;
+  }
+
+  .gupta-foundation .content-part {
+    grid-template-columns: 1fr;
+  }
+
+  .gupta-foundation .content-part .left-part {
+    padding: 50px 100px 200px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gupta-foundation .content-part .right-part {
+    display: none;
+  }
+
+  .hair-product-content .content-part {
+    padding: 0;
+  }
+
+  .main-content .hair-product-section .banner-bottom-bg-img {
+    display: none;
+  }
+
+  .hair-product-section .hair-product-content {
+    min-height: 500px;
+  }
+
+  .foundation-info .content-block {
+    max-width: 100%;
+  }
+
+  .award-section .content-block .middle-content-part .award-card h5 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .award-section .content-block .middle-content-part .award-card div {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .foundation-info .content-block .info-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .main-content .product-section .content .box-part .box .text-part .box-text {
+    font-size: 25px;
+  }
+
+  .main-content .product-section .content .box-part .btn,
+  .main-content .product-section .content .box-part .box .text-part .text {
+    font-size: 16px;
+  }
+
+  .main-content .product-section .content .head-text {
+    width: 80%;
+  }
+
+  .footer .content .bottom-part {
+    margin-top: 60px;
+  }
+
+  .footer .content .top-part .text {
+    width: 92%;
+    margin: 35px auto 0;
+  }
+
+  .footer .content .bottom-part .link-list .list-item .list-head,
+  .footer .content .bottom-part .link-list .list-item .link {
+    font-size: 18px;
+  }
+
+  .footer .content .bottom-part .text-part .text {
+    font-size: 18px;
+  }
+
+  .footer .content .bottom-part .text-part .head {
+    font-size: 20px;
+  }
+
+  .footer .content .bottom-part .text-part .social-media-links a {
+    margin-right: -25px;
+  }
+
+  .footer .content .bottom-part .text-part .social-media-links a img {
+    width: 60%;
+  }
+
+  .line {
+    padding: 14px 0;
+    height: 40px;
+  }
+
+  .footer .content .top-part .form .field .btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content section .banner-frame {
+    display: none;
+  }
+
+  .main-content section .banner-bottom-bg-img {
+    display: none;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 50%;
+  }
+
+  .banner-section .content .item .item-content-block {
+    gap: 0;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part img {
+    width: 100%;
+  }
+
+  .main-content .product-section .content .head-text {
+    width: 100%;
+  }
+
+  .main-content .product-section .content .box-part {
+    gap: 30px;
+  }
+
+  .hair-product-section .hair-product-content {
+    grid-template-columns: none;
+  }
+
+  .hair-product-content .image-part {
+    display: none;
+  }
+
+  .gupta-foundation .content-part .left-part {
+    padding: 50px 50px 110px;
+  }
+
+  .award-section .content-block .top-title-part {
+    max-width: 100%;
+  }
+
+  .footer .content .top-part .text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer .content .top-part .form .field input {
+    width: 100%;
+  }
+
+  .footer .content .top-part .form .field .btn {
+    padding: 5px 20px;
+  }
+
+  .footer .content .bottom-part .text-part {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .footer .content .bottom-part {
+    flex-wrap: wrap;
+  }
+
+  .award-section .content-block .middle-content-part {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .award-section .content-block .middle-content-part .award-card {
+    align-items: center;
+  }
+
+  .main-content .product-section .content .box-part {
+    grid-template-columns: 1fr;
+  }
+
+  .hair-product-content .content-part {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .content .top-part .form .field {
+    margin-top: 40px;
+  }
+
+  .footer .content .bottom-part {
+    margin-top: 45px;
+  }
+
+  .footer .content .top-part .form .field .btn {
+    margin-left: -78px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .gupta-foundation .content-part .left-part {
+    padding: 50px 25px 90px;
+  }
+
+  .footer .content .top-part .form .field {
+    margin-top: 35px;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 40%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .text {
+    font-size: 20px;
+  }
+
+  .main-content .product-section .content .head-text {
+    font-size: 20px;
+  }
+
+  .gupta-foundation .content-part .desc-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer .content .bottom-part {
+    margin-top: 35px;
+  }
+
+  .footer .content .top-part .text {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -330px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .text-part .head-text {
+    font-size: 26px;
+  }
+
+  .header .content .navbar .navbar-brand {
+    width: 50%;
+  }
+
+  .header .content {
+    padding: 10px 0;
+  }
+
+  .header .content .navbar .navbar-toggler {
+    outline: none;
+    border: none;
+  }
+
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    left: 45%;
+    bottom: 42%;
+  }
+
+  .banner-section .content .item .item-content-block .text-part {
+    padding-top: 45px;
+  }
+
+  .main-content .product-section .content {
+    padding: 45px 0 30px;
+  }
+
+  .hair-product-section .hair-product-content {
+    min-height: 375px;
+  }
+
+  .gupta-foundation .content-part .left-part {
+    padding: 40px 25px;
+  }
+
+  .foundation-info .content-block {
+    padding: 40px 0;
+  }
+
+  .main-content .award-section {
+    margin-bottom: 0;
+    padding: 30px 0;
+  }
+
+  .footer {
+    padding: 35px 0 20px;
+  }
+
+  .line {
+    padding: 10px 0;
+    height: 30px;
+  }
+
+  .award-section .content-block .bottom-action-part .btn,
+  .footer .content .top-part .form .field .btn,
+  .main-content .banner-section .content .owl-carousel .item .text-part .btn,
+  .main-content .product-section .content .box-part .btn,
+  .hair-product-content .content-part .btn,
+  .gupta-foundation .content-part .btn {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .gupta-foundation .content-part .btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-content .banner-section .content .owl-carousel .owl-dots {
+    bottom: 38%;
+  }
+
+  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+    bottom: -280px;
+  }
+}
