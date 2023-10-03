@@ -28,6 +28,7 @@ body {
 }
 
 /* ---- common css start ---- */
+
 .line {
   width: 100%;
   padding: 20px 0;
@@ -71,11 +72,13 @@ body {
 }
 
 .custom-container {
-  max-width: 90%;
+  max-width: 1920px;
+  width: 90%;
   margin: 0 auto;
 }
 
 /* ---- header section css start ---- */
+
 .header .content {
   background-color: #d29999;
   padding: 20px 0;
@@ -109,15 +112,33 @@ body {
   font-family: "IowanOldStyle" !important;
 }
 
-.header .content .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-toggle:hover {
+.header
+  .content
+  .navbar
+  .navbar-collapse
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-toggle:hover {
   color: #fff;
 }
 
-.header .content .navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
+.header
+  .content
+  .navbar
+  .navbar-collapse
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-toggle::after {
   border: none;
 }
 
-.header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+.header
+  .content
+  .navbar
+  .navbar-collapse
+  .navbar-nav
+  .nav-item
+  .nav-link:hover {
   color: white;
 }
 
@@ -140,6 +161,7 @@ body {
 }
 
 /* ---- footer section css start ---- */
+
 .footer {
   background-color: #d29999;
   padding: 50px 0 20px;
@@ -198,7 +220,7 @@ body {
   line-height: 125%;
 }
 
-.footer .content .bottom-part .text-part .text {
+.footer .content .bottom-part .text-part .footer-text {
   font-size: 28px;
   line-height: 125%;
   font-weight: 400;
@@ -239,6 +261,7 @@ body {
 }
 
 /* ---- banner section css start ---- */
+
 .main-content .banner-section {
   background-color: #d29999;
   position: relative;
@@ -269,7 +292,13 @@ body {
   background-color: #e6d0ce;
 }
 
-.main-content .banner-section .content .owl-carousel .item .text-part .head-text {
+.main-content
+  .banner-section
+  .content
+  .owl-carousel
+  .item
+  .text-part
+  .head-text {
   font-size: 35px;
   line-height: 125%;
   letter-spacing: 3px;
@@ -285,6 +314,18 @@ body {
   font-size: 20px;
   font-family: "IowanOldStyle";
   font-weight: 400;
+}
+
+.main-content
+  .banner-section
+  .content
+  .owl-carousel
+  .item
+  .text-part
+  .btn:hover {
+  background: #000;
+  color: #d29999;
+  transform: scale(0.98);
 }
 
 .main-content .banner-section .content .owl-carousel .item .text-part .text {
@@ -323,13 +364,20 @@ body {
   margin-bottom: -15px;
 }
 
-.main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+.main-content
+  .banner-section
+  .content
+  .owl-carousel
+  .item
+  .image-part
+  .bottom-right {
   position: absolute;
   bottom: -59%;
   right: 0;
 }
 
 /* ---- production section css start ---- */
+
 .main-content .product-section {
   position: relative;
   overflow: hidden;
@@ -403,6 +451,12 @@ body {
   font-family: "IowanOldStyle";
 }
 
+.main-content .product-section .content .box-part .btn:hover {
+  background: #000;
+  color: #d29999;
+  transform: scale(0.98);
+}
+
 .main-content .product-section .content .box-part {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -425,6 +479,7 @@ body {
 }
 
 /* ---- hair product section css start ---- */
+
 .main-content .hair-product-section {
   width: 100%;
   position: relative;
@@ -494,6 +549,12 @@ body {
   font-weight: 400;
 }
 
+.hair-product-content .content-part .btn:hover {
+  background: #000;
+  color: #d29999;
+  transform: scale(0.98);
+}
+
 /* ---- gupta foundation section css start ---- */
 .main-content .gupta-foundation {
   width: 100%;
@@ -537,6 +598,12 @@ body {
   font-family: "IowanOldStyle";
   font-weight: 400;
   width: 50%;
+}
+
+.gupta-foundation .content-part .btn:hover {
+  background: #000;
+  color: #d29999;
+  transform: scale(0.98);
 }
 
 .gupta-foundation .content-part .desc-text {
@@ -642,6 +709,12 @@ body {
   cursor: pointer;
 }
 
+.award-section .content-block .bottom-action-part .btn:hover {
+  background: #000;
+  color: #d29999;
+  transform: scale(0.98);
+}
+
 .award-section .content-block .middle-content-part .award-card {
   display: flex;
   flex-direction: column;
@@ -681,18 +754,420 @@ body {
   object-position: center;
 }
 
+/* ----- About us page css start -----*/
+
+.about-page .title {
+  text-align: center;
+}
+
+.about-page .text {
+  font-family: "IowanOldStyle";
+  font-size: 35px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  width: 68%;
+  margin: 0 auto;
+}
+
+.about-page .head {
+  font-family: "IowanOldStyle";
+  font-size: 35px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-page .box-text {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #000;
+  font-family: "IowanOldStyle";
+  text-align: center;
+}
+
+.about-page .box-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 44px;
+  column-gap: 36px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-page .box-part .box {
+  background-color: #e7dfdf;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us-section {
+  background-color: #d29999;
+  padding: 70px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.about-us-section .banner-bottom-bg-img {
+  bottom: 0 !important;
+  z-index: -1 !important;
+  left: -7%;
+  width: 115%;
+}
+
+.about-us-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.second-section {
+  background-color: #ebe0e0;
+  padding: 60px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.second-section .banner-bottom-bg-img {
+  bottom: 0 !important;
+  z-index: -1 !important;
+  left: -29%;
+  width: 132%;
+}
+
+.second-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.third-section {
+  background-color: #d29999;
+  padding: 70px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.third-section .banner-bottom-bg-img {
+  bottom: 0 !important;
+  z-index: -1 !important;
+  left: -7%;
+  width: 115%;
+}
+
+.third-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ----- About us page css end -----*/
+
+/* ----- Contact us page css start ----- */
+
+.contact-page .main-content .contact-us-section {
+  background-color: #d29999;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-page .main-content .contact-us-section .content {
+  position: relative;
+  padding: 40px 0 100px;
+  z-index: 3;
+}
+
+.contact-page .main-content .contact-us-section .content .title {
+  text-align: center;
+}
+
+.contact-page .main-content .contact-us-section .content .cotent-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 80px;
+  gap: 50px;
+  max-width: 85%;
+  margin: 80px auto 0;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form
+  .field {
+  position: relative;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form
+  .field
+  label {
+  position: absolute;
+  font-family: "IowanOldStyleBold";
+  font-size: 42px;
+  line-height: 125%;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form
+  .field
+  input {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 10px 0 10px 125px;
+  font-family: "IowanOldStyleBold";
+  font-size: 28px;
+  line-height: 125%;
+  width: 85%;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form
+  .field
+  textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-family: "IowanOldStyleBold";
+  font-size: 28px;
+  line-height: 125%;
+  padding-top: 50px;
+  width: 85%;
+}
+
+/* .contact-page .main-content .contact-us-section .content .cotent-area .left-part .form .field:last-child label {
+  border-bottom: 2px solid #000;
+} */
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form
+  .field
+  textarea:focus-visible,
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .left-part
+  .form
+  .field
+  input:focus-visible {
+  outline: none;
+}
+
+.contact-page .main-content .head {
+  font-family: "IowanOldStyleBold";
+  font-size: 42px;
+  line-height: 125%;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.contact-page .main-content .text {
+  font-family: "IowanOldStyleBold";
+  font-size: 40px;
+  line-height: 125%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .right-part {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-page
+  .main-content
+  .contact-us-section
+  .content
+  .cotent-area
+  .right-part
+  .text-part
+  .gap {
+  width: 80%;
+}
+
+/* ----- Contact us page css end ----- */
+
+/* ----- Founder page css start ----- */
+.Founder-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+.Founder-page .main-content .foundation-section {
+  position: relative;
+  overflow-x: hidden;
+}
+.Founder-page .main-content .foundation-section .center-bg-image {
+  position: absolute;
+  top: 35%;
+  opacity: 0.5;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.Founder-page .main-content .foundation-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 0 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.Founder-page .main-content .foundation-section .content .title {
+  text-align: center;
+}
+
+.Founder-page
+  .main-content
+  .foundation-section
+  .content
+  .text-part:first-of-type
+  .text:first-child {
+  margin-bottom: 30px;
+}
+
+.Founder-page .main-content .foundation-section .content .text-part .text {
+  font-family: "IowanOldStyle";
+  font-size: 35px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Founder-page .main-content .foundation-section .content .box-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 44px;
+  column-gap: 36px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Founder-page .main-content .foundation-section .content .box-part .box {
+  background-color: #d29999;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.Founder-page
+  .main-content
+  .foundation-section
+  .content
+  .box-part
+  .box
+  .box-text {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #000;
+  font-family: "IowanOldStyle";
+  text-align: center;
+}
+
+/* ----- Founder page css start ----- */
+
+/* ----- responsive design start ----- */
+
 @media (max-width: 1750px) {
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -28%;
   }
 
   .main-content .banner-section .content .owl-carousel .owl-dots {
     bottom: 100px;
   }
+
+  /* about us page css */
+
+  .about-page .text {
+    width: 72%;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    width: 78%;
+  }
 }
 
 @media (max-width: 1660px) {
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -20%;
   }
 
@@ -703,10 +1178,31 @@ body {
   .banner-section .content .item .item-content-block .text-part {
     padding-top: 60px;
   }
+
+  .header .content .navbar .navbar-collapse .navbar-nav {
+    gap: 30px;
+  }
+
+  /* about us page css */
+
+  .about-page .text {
+    width: 75%;
+  }
+
+  /* Founder page css  */
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    width: 82%;
+  }
 }
 
 @media (max-width: 1550px) {
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -10%;
   }
 
@@ -726,6 +1222,26 @@ body {
   .header .content .navbar .navbar-brand {
     font-size: 35px;
   }
+
+  /* about us page css */
+
+  .about-page .text {
+    width: 82%;
+  }
+
+  .about-page .box-part {
+    width: 90%;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    width: 88%;
+  }
+
+  .Founder-page .main-content .foundation-section .content .box-part {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1519px) {
@@ -735,18 +1251,32 @@ body {
 }
 
 @media (max-width: 1460px) {
-
   .header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
   .main-content .banner-section .content .owl-carousel .item .text-part .text {
     font-size: 24px;
   }
 
-  .gupta-foundation .content-part .btn{
+  .gupta-foundation .content-part .btn {
     width: 60%;
   }
 
-  .award-section .content-block .top-title-part{
+  .award-section .content-block .top-title-part {
     max-width: 76%;
+  }
+
+  /* about us page css */
+
+  .about-page .box-part {
+    width: 98%;
+  }
+
+  /* Founder page css  */
+  .Founder-page .main-content .foundation-section .content .box-part {
+    width: 98%;
+  }
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    width: 94%;
   }
 }
 
@@ -769,7 +1299,13 @@ body {
     line-height: 60px;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .text-part .head-text {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .text-part
+    .head-text {
     font-size: 30px;
   }
 
@@ -859,7 +1395,7 @@ body {
     width: 42%;
   }
 
-  .footer .content .bottom-part .text-part .text {
+  .footer .content .bottom-part .text-part .footer-text {
     font-size: 22px;
   }
 
@@ -877,7 +1413,7 @@ body {
   }
 
   .header .content .navbar .navbar-collapse .navbar-nav {
-    gap: 25px;
+    gap: 20px;
   }
 
   .header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -890,10 +1426,27 @@ body {
     line-height: 40px;
   }
 
-  .award-section .content-block .top-title-part{
+  .award-section .content-block .top-title-part {
     max-width: 64%;
   }
 
+  /* about us page css */
+
+  .about-page .text {
+    width: 87%;
+  }
+
+  /* contact us page css */
+
+  .contact-page .main-content .contact-us-section .content .cotent-area {
+    margin-top: 50px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -905,7 +1458,13 @@ body {
     bottom: 62px;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -30%;
   }
 
@@ -922,6 +1481,30 @@ body {
     font-size: 25px;
     line-height: 30px;
   }
+
+  /* about us page css */
+
+  .about-page .text {
+    width: 94%;
+  }
+
+  .about-page .box-part {
+    width: 100%;
+  }
+
+  .about-page .box-part .box {
+    padding: 30px 34px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .box-part {
+    width: 100%;
+  }
+
+  .Founder-page .main-content .foundation-section .content .box-part .box {
+    padding: 30px 34px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -929,7 +1512,13 @@ body {
     bottom: 30px;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -15%;
   }
 
@@ -970,6 +1559,83 @@ body {
   .footer .content .top-part .form .field input {
     width: 50%;
   }
+
+  /* about us page css */
+
+  .about-page .head,
+  .about-page .text {
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .about-page .box-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  /* contact us page css */
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .right-part
+    .text-part
+    .gap {
+    width: 75%;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    label,
+  .contact-page .main-content .head {
+    font-size: 35px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    input {
+    padding: 5px 0 5px 106px;
+  }
+
+  .contact-page .main-content .contact-us-section .content .cotent-area {
+    max-width: 100%;
+    gap: 30px;
+  }
+  .contact-page .main-content .text {
+    font-size: 30px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page
+    .main-content
+    .foundation-section
+    .content
+    .box-part
+    .box
+    .box-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -978,13 +1644,45 @@ body {
     padding-bottom: 50px;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -4%;
   }
 
   .header .content .navbar .navbar-brand {
     font-size: 30px;
     line-height: 35px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .header .content .navbar .navbar-collapse .navbar-nav {
+    gap: 5px;
+  }
+
+  /* about us page css */
+
+  .about-page .box-text {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page
+    .main-content
+    .foundation-section
+    .content
+    .box-part
+    .box
+    .box-text {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
@@ -1016,6 +1714,50 @@ body {
     font-size: 25px;
     line-height: 30px;
   }
+
+  /* contact us page css */
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    label,
+  .contact-page .main-content .head {
+    font-size: 30px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    input {
+    padding: 5px 0 5px 94px;
+    font-size: 24px;
+  }
+
+  .contact-page .main-content .text {
+    font-size: 26px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .header .content .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1024,6 +1766,13 @@ body {
     line-height: 20px;
   }
 
+  .header .content .navbar .navbar-toggler {
+    outline: none;
+    border: none;
+  }
+  .header .content .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
   .main-content .product-section .content .box-part {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1065,12 +1814,120 @@ body {
     font-size: 34px;
     line-height: 38px;
   }
+
+  /* about us page css */
+
+  .about-page .head,
+  .about-page .text {
+    width: 100%;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .about-page .box-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page
+    .main-content
+    .foundation-section
+    .content
+    .box-part
+    .box
+    .box-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 991px) {
   .line {
     padding: 16px 0;
     height: 45px;
+  }
+
+  /* about us page css */
+
+  .about-page .box-part {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-us-section .content,
+  .second-section .content,
+  .third-section .content {
+    gap: 30px;
+  }
+
+  /* contact us page css */
+
+  .contact-page .main-content .contact-us-section .content .cotent-area {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .right-part
+    .text-part
+    .gap {
+    width: 100%;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .right-part
+    .text-part {
+    text-align: center;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    input,
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    textarea {
+    width: 100%;
+  }
+
+  .contact-page .main-content .head {
+    margin-bottom: 15px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .box-part {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -1079,7 +1936,9 @@ body {
     display: block;
     width: 70%;
   }
-
+  .Founder-page .main-content .foundation-section .center-bg-image{
+    display: none;
+  }
   .banner-section .content .item .item-content-block {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1089,7 +1948,13 @@ body {
     left: 50%;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -400px;
     left: 60px;
     width: 90%;
@@ -1185,7 +2050,7 @@ body {
   }
 
   .footer .content .bottom-part .text-part .head {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .footer .content .bottom-part .text-part .social-media-links a {
@@ -1203,6 +2068,74 @@ body {
 
   .footer .content .top-part .form .field .btn {
     font-size: 18px;
+  }
+
+  /* about us page css */
+
+  .about-page .head,
+  .about-page .text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* contact us page css */
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    label,
+  .contact-page .main-content .head {
+    font-size: 25px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    input {
+    padding: 0px 0 0px 76px;
+    font-size: 24px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    textarea {
+    font-size: 24px;
+    padding-top: 40px;
+  }
+
+  .contact-page .main-content .text {
+    font-size: 24px;
+  }
+
+  .main-content section .banner-frame {
+    display: none;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .Founder-page .main-content .foundation-section .content {
+    gap: 36px;
   }
 }
 
@@ -1303,6 +2236,35 @@ body {
     margin-left: -78px;
   }
 
+  /* about us page css */
+
+  .about-page .box-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page
+    .main-content
+    .foundation-section
+    .content
+    .box-part
+    .box
+    .box-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .Founder-page .main-content .foundation-section .content .box-part {
+    row-gap: 30px;
+    column-gap: 30px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1310,6 +2272,13 @@ body {
     padding: 50px 25px 90px;
   }
 
+  .footer .content .bottom-part .link-list .list-item .list-head,
+  .footer .content .bottom-part .link-list .list-item .link {
+    font-size: 16px;
+  }
+  .footer .content .bottom-part .link-list .list-item .list-head {
+    margin-bottom: 10px;
+  }
   .footer .content .top-part .form .field {
     margin-top: 35px;
   }
@@ -1332,7 +2301,7 @@ body {
   }
 
   .footer .content .bottom-part {
-    margin-top: 35px;
+    margin-top: 10px;
   }
 
   .footer .content .top-part .text {
@@ -1340,13 +2309,25 @@ body {
     margin: 30px auto 0;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -330px;
     left: 0px;
     width: 100%;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .text-part .head-text {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .text-part
+    .head-text {
     font-size: 26px;
   }
 
@@ -1356,11 +2337,6 @@ body {
 
   .header .content {
     padding: 10px 0;
-  }
-
-  .header .content .navbar .navbar-toggler {
-    outline: none;
-    border: none;
   }
 
   .main-content .banner-section .content .owl-carousel .owl-dots {
@@ -1415,6 +2391,96 @@ body {
   .gupta-foundation .content-part .btn {
     width: 60%;
   }
+
+  /* about us page css */
+
+  .about-page .box-part {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* contact us page css */
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    label,
+  .contact-page .main-content .head {
+    font-size: 22px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    input {
+    padding-left: 70px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    textarea {
+    padding-top: 30px;
+  }
+
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    input,
+  .contact-page
+    .main-content
+    .contact-us-section
+    .content
+    .cotent-area
+    .left-part
+    .form
+    .field
+    textarea {
+    font-size: 22px;
+  }
+
+  .contact-page .main-content .text {
+    font-size: 20px;
+  }
+
+  .contact-page .main-content .contact-us-section .content .cotent-area {
+    margin-top: 30px;
+  }
+
+  /* Founder page css  */
+
+  .Founder-page .main-content .foundation-section .content .text-part .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .Founder-page .main-content .foundation-section .content .box-part {
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .Founder-page .main-content .foundation-section .content .box-part .box {
+    padding: 30px 10px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1422,7 +2488,21 @@ body {
     bottom: 38%;
   }
 
-  .main-content .banner-section .content .owl-carousel .item .image-part .bottom-right {
+  .main-content
+    .banner-section
+    .content
+    .owl-carousel
+    .item
+    .image-part
+    .bottom-right {
     bottom: -280px;
   }
+
+  /* contact us page css */
+
+  .contact-page .main-content .text {
+    font-size: 18px;
+  }
 }
+
+/* ----- responsive design end ----- */
